@@ -1,0 +1,85 @@
+<!--16442178 Arnaud Fontane-->
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="title" content=" John Doe Online CV Contact">
+    <meta name="author" content="John Doe">
+    <meta name="keywords" content="front end developper, web developper, web designer, software engineer, coder, programmer">
+    <link rel="stylesheet" type="text/css" href="../css/contact.css" />
+    <title>Arnaud Fontane Online CV Home</title>
+</head>
+
+
+<body>
+    <header>
+        <nav id="dropdown1">
+            <!--SANDWICH ICON-->
+            <div class="container0">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <!--END OF SANDWICH ICON-->
+            <!--NAVBAR CONTENT-->
+            <ul id="navbar">
+              <li><a href="../index.html"><span class="navtext">Home</span></a>
+              </li>
+              <li><a href="bio.html"><span class="navtext">bio</span></a></li>
+              <li><a href="contact.html"><span class="navtext">contact</span></a></li>
+              <li class="dropdown"><a href="cv.html"><span class="navtext">cv</span> <span id="arrow" >&#9660;</span></a>
+                  <!--CV SUBMENU-->
+                  <ul class="dropdown-content">
+                    <li><a href="cv.html#pgSkills"><span class="navtext">Skills</span></a></li>
+                    <li> <a href="cv.html#date_container"><span class="navtext">Experience/Education</span></a></li>
+                    <li> <a href=""></a></li><!--BLANK SPACE makes Experience/Education accessible on scroll-->
+                    <li> <a href=""></a> </li>
+                  </ul>
+                  <!--END OF CV SUBMENU-->
+              </li>
+          </ul>
+            <!--END OF NAVBAR CONTENT-->
+        </nav>
+    </header>
+
+
+    <main>
+        <p>CONTACT ME</p>
+        <form name="contact" method="post">
+            <fieldset>
+                <input type="text" name="name" id="namebox" placeholder="Your name" tabindex="1">
+            </fieldset>
+            <fieldset>
+                <input type="email" name="email" id="emailbox" placeholder="Your email address" tabindex="2">
+            </fieldset>
+            <fieldset>
+                <input type="text" name="subject" id="subject" placeholder="Subject" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+                <textarea name="message" id="message" rows="40" tabindex="4"></textarea>
+            </fieldset>
+            <fieldset>
+                <input type="submit" id="send_email" name="submit" value="Send Email" tabindex="5">
+            </fieldset>
+        </form>
+        <!--END OF SECOND SCREEN-->
+    </main>
+
+    <footer>
+        <div class="icon_bar">
+          <img class="ico1" src="../img/fb.png" alt="facebook_icon">
+          <img class="ico1" src="../img/tw.png" alt="twitter_icon">
+          <img class="ico1" src="../img/in.png" alt="instagram_icon">
+          <a href="https://github.com/GitUser2345/csy1018-assign1">
+            <img class="ico1" src="../img/gi.png" alt="github_icon">
+          </a>
+        </div>
+        <p>1 Fake Street<br>NN11AA<br>Northampton<br>United Kingdom<br>07400999001</p>
+    </footer>
+
+
+</body>
+
+
+</html>

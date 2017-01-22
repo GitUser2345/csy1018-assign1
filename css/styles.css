@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    cursor: crosshair;
+    letter-spacing: 2px;
+    word-spacing: 6px;
+}
+::-moz-selection {
+  background: lightseagreen; /* Gecko Browsers */
+}
+/*NAVBAR STYLING>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+::-webkit-scrollbar {
+    width: 0px;
+    /* remove scrollbar space */
+    background: transparent;
+    /* optional: just make scrollbar invisible */
+}
+#dropdown1 {
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+.container0 {
+    position: fixed;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    right: 5px;
+    margin-top: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background-color: lightseagreen;
+    transition-property: background-color, border-radius;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+.bar1, .bar2, .bar3 {
+    height: 3px;
+    left: 3px;
+    margin: 6px;
+    background-color: black;
+}
+#arrow {
+    margin-left: calc(50% - 27px);
+}
+/*CV Dropdown Content>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.dropdown {
+    text-align: right !important;
+    padding-right: 5%;
+}
+.dropdown-content {
+    display: none;
+    position: relative;
+    height: auto;
+    list-style-type: none;
+    margin: 0;
+}
+.dropdown-content li {
+    list-style-type: none;
+    margin: 0;
+    color: black;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+.dropdown-content a {
+    padding-top: 1% !important;
+    text-decoration: none!important;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<End of CV Dropdown Content*/
+/*NavBar content>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#navbar {
+    position: fixed;
+    display: none!important;
+    width: 0;
+    height: 0;
+    margin: 0;
+    z-index: 2;
+    padding-top: 10%;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#navbar>li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+#navbar a {
+    display: block;
+    cursor: crosshair;
+    text-decoration: none;
+    color: inherit;
+    padding: 5%;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<End of NavBar Condtent*/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<END OF NAVBAR STYLING*/
+/*NAVBAR BEHAVIOR*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#dropdown1:hover .container0 {
+    /*Animation menu icon transform in disc*/
+    background-color: transparent;
+    border-radius: 50%;
+    transition-property: border-radius, background;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    cursor: crosshair;
+    box-shadow: 0px 0px 0px 0px;
+}
+#dropdown1:hover {
+    display: block;
+    width: 50%;
+    height: 120%;
+    border-radius: 0%;
+    background: white;
+    transition-property: width, height, padding, width, border-radius;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-out;
+    box-shadow: -10px 0px 16px 0px rgba(0, 0, 0, 0.2);
+}
+#dropdown1:hover #navbar {
+    display: block!important;
+    width: 50%;
+    height: 100%;
+    padding-bottom: 0%;
+    overflow-y: scroll;
+    border-radius: 0%;
+    transition-property: padding, width;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-out;
+}
+/*Dropdown Content Behavior>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.dropdown:hover .dropdown-content {
+    display: block;
+    text-decoration: none;
+}
+.navtext:hover {
+    text-decoration: line-through;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Dropdown Content Behavior*/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<END OF NAVBAR BEHAVIOR*/
+/*MAIN STYLING>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.Number {
+    position: relative;
+    text-align: center;
+    font-size: 4em;
+    color: white;
+    font-weight: bold;
+    font-family: "Courrier New";
+}
+.Number2 {
+    position: relative;
+    text-align: center;
+    font-size: 3em;
+    color: black;
+    font-weight: bold;
+    font-family: "Open Sans";
+}
+#scroll-container>div {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+@media only screen and (max-width: 1280px) {
+    #scroll-container div {
+        height: auto;
+    }
+    .title {
+        display: block;
+        left: 50%!important;
+    }
+    #dropdown1:hover {
+        width: 85%!important;
+    }
+    #navbar {
+        width: 85%!important;
+    }
+    #img1 {
+        float: right;
+        right: 0;
+        width: 330px!important;
+        height: auto;
+    }
+    .DP1 {
+        text-align: center;
+        height: 330px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .DPcontainerL {
+        justify-content: space-around;
+    }
+    #card1{
+      height:330px;
+    }
+}
+@media only screen and (max-width: 720px) {
+    .title {
+        display: none;
+    }
+    .xmp2 {
+        display: flex!important;
+        position: relative;
+        width: 100%;
+        left: 0;
+        z-index: -1;
+        margin-top: 0;
+        background-color: gold;
+        color: black;
+        font-family: "Open Sans";
+        font-size: 0.6em;
+    }
+    .xmp {
+        display: none!important;
+    }
+    #page-1 {
+        position: relative;
+        width: 100%;
+        padding-bottom: 90%!important;
+        background-image: url("../img/s.jpg");
+        background-size: cover;
+        background-position: left!important;
+        background-repeat: no-repeat;
+    }
+    .DP1 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    #img1 {
+        float: right;
+        right: 0;
+        width: 330px!important;
+    }
+    .DPcontainerL {
+        justify-content: space-around;
+    }
+    #card1{
+      height:440px;
+    }
+    #card2{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+
+      text-align: justify;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .title {
+        display: none;
+    }
+    .DP1 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    #page-1 {
+        position: relative;
+        width: 100%!important;
+        padding-bottom: 90%!important;
+        background-image: url("../img/s.jpg");
+        background-size: cover;
+        background-position: left!important;
+        background-repeat: no-repeat;
+    }
+    #img1 {
+          width: 330px!important;
+    }
+    .DPcontainerL {
+        justify-content: space-around;
+    }
+    #card1{
+      height:440px;
+    }
+    #card2{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+
+      text-align: justify;
+    }
+}
+/*-----------------page-1--------------------------------*/
+#page-1 {
+    position: relative;
+    width: 100%;
+    background-image: url("../img/k.jpg");
+    background-size: contain;
+    background-position: left!important;
+    background-repeat: no-repeat;
+    padding-bottom: 56%;
+}
+.title {
+    position: absolute;
+    top: 10%;
+    left: 60%;
+
+    font-family: 'Anonymous Pro', cursive;
+    font-size: 1em;
+    color: black;
+}
+#img1 {
+    width: 440px;
+    height: auto;
+    float: right;
+    right: 0;
+}
+.xmp {
+    display: none;
+}
+.xmp2 {
+    position: relative;
+    bottom: 0;
+    margin-bottom: 0px;
+    left: 0;
+    display: none;
+    padding: 50px;
+    background-color: gold;
+}
+/*-----------------end of page-1-----------------------------------------------*/
+/*-----------------page-6------------------------------------------------------*/
+#page-3 {
+    width: 100%;
+    background-color: lightseagreen;
+
+    margin: 0;
+
+    height: auto;
+}
+.DP1 {
+    position: relative;
+    width: 65%;
+    height: 440px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 50px;
+
+    color: black;
+    font-family: "Open Sans";
+    font-size: 0.8em;
+
+    background-color: white;
+}
+#card1{
+  height: 220px;
+  text-align: center;
+  color: black;
+  font-family: "Open Sans";
+  font-size: 0.8em;
+
+  background-color: white;
+}
+#card2{
+  text-align: left;
+  color: black;
+  font-family: "Open Sans";
+  font-size: 0.8em;
+
+  background-color: white;
+}
+#card3{
+  height: 220px;
+  color: black;
+  font-family: "Open Sans";
+  font-size: 0.8em;
+
+  background-color: white;
+}
+#card1:hover{
+    transform: translate(0,-30px);
+    box-shadow: 0 0 5px black;
+
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-out;
+}
+#card2:hover{
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    box-shadow: 0 0 5px black;
+
+    transition-property: margin;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-out;
+}
+#card3:hover{
+  transform: translate(0,30px);
+  box-shadow: 0 0 5px black;
+
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-out;
+}
+/*-----------------page-6------------------------------------------------------*/
+.DPcontainerL {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%!important;
+    height: auto;
+}
+.DP {
+    flex: 0 1 200px;
+    height: 200px;
+    margin: 50px;
+    text-align: center;
+    color: deeppink;
+    font-family: "Open Sans";
+    font-size: 1.4em;
+    font-weight: bolder;
+    background-image: url("../img/s.jpg");
+    background-size: cover;
+}
+#page-6 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+#p6title {
+    position: absolute;
+    font-family: 'Open Sans';
+    color: black;
+    font-size: 5em;
+    top: 0px;
+}
+#research {
+    background-image: url('../img/research.jpg');
+}
+#coding, #debugging {
+    background-image: url('../img/coding.jpg');
+}
+#designing {
+    background-image: url('../img/design.jpg');
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<END OF MAIN STYLING*/
+/*FOOTER STYLING>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+footer {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    text-align: center;
+    bottom:0px;
+    font-family: 'Open Sans';
+    font-size: 0.7em;
+    box-shadow: 0 -8px 16px silver;
+}
+
+footer p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon_bar {
+    margin-left: auto;
+    margin-right: auto;
+}
+.ico1 {
+    box-shadow: 0 0 0px silver;
+    width: 36px;
+    border-radius: 50%;
+}
+
+.ico1:hover {
+    box-shadow: 0 6px 16px silver;
+    width: 48px;
+    transition-property: width;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-out;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<END OF FOOTER STYLING*/
